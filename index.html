@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Argos — Controle de estoque simples, no celular</title>
+<meta name="description" content="Argos é um sistema de controle de estoque feito para o celular: entrada em massa por caixas, lotes e validade, saída por FEFO, transferência entre estoques e histórico completo.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://argosapp.io/">
+<link rel="icon" type="image/svg+xml" href="./assets/logo-argos.svg">
+<meta name="theme-color" content="#0073FE">
+
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Argos">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Argos — Controle de estoque simples, no celular">
+<meta property="og:description" content="Entrada em massa por caixas, lotes e validade, saída por FEFO, transferência entre estoques e histórico completo. Tudo pelo celular.">
+<meta property="og:url" content="https://argosapp.io/">
+<meta property="og:image" content="https://argosapp.io/assets/social-preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Argos — controle de estoque no celular">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Argos — Controle de estoque simples, no celular">
+<meta name="twitter:description" content="Entrada em massa por caixas, lotes e validade, saída por FEFO, transferência entre estoques e histórico completo. Tudo pelo celular.">
+<meta name="twitter:image" content="https://argosapp.io/assets/social-preview.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css?v=3">
+<link rel="preload" as="image" href="./assets/app-preview.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://argosapp.io/#organization",
+      "name": "Argos",
+      "url": "https://argosapp.io/",
+      "logo": "https://argosapp.io/assets/argos_horizontal.png",
+      "email": "argosapp.info@gmail.com"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://argosapp.io/#website",
+      "url": "https://argosapp.io/",
+      "name": "Argos",
+      "publisher": { "@id": "https://argosapp.io/#organization" },
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Argos",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": "Sistema de controle de estoque para o celular: entrada em massa por caixas, lotes e validade, saída por FEFO, transferência entre estoques e histórico completo.",
+      "url": "https://painel.argosapp.io",
+      "image": "https://argosapp.io/assets/app-preview.png",
+      "publisher": { "@id": "https://argosapp.io/#organization" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Preciso instalar algum aplicativo?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Não. O Argos abre no navegador do celular e pode ser adicionado à tela inicial, funcionando como um app." } },
+        { "@type": "Question", "name": "E se alguém registrar uma quantidade errada?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Movimentações não são editadas nem apagadas. A correção é feita com um ajuste (positivo ou negativo) com motivo obrigatório, mantendo o histórico transparente." } },
+        { "@type": "Question", "name": "O estoque pode ficar negativo?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Não. O sistema bloqueia qualquer saída acima do saldo disponível, mesmo com várias pessoas registrando ao mesmo tempo." } },
+        { "@type": "Question", "name": "Meus dados ficam separados de outras empresas?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sim. Cada empresa tem seus dados isolados, e o acesso é verificado diretamente no banco de dados." } },
+        { "@type": "Question", "name": "O Argos me avisa quando algo precisa de atenção?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sim. Você cria alarmes, por exemplo para produtos perto do vencimento ou com estoque baixo, e o Argos dispara o aviso quando a condição acontece." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="/" class="logo" aria-label="Argos — início">
+      <img src="./assets/argos_horizontal.png" width="141" height="26" alt="Argos">
+    </a>
+    <nav class="nav-links" aria-label="Principal">
+      <a href="#recursos">Recursos</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+    <a href="https://painel.argosapp.io" class="btn btn-primary">Entrar</a>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="tag">Controle de estoque feito para o celular</span>
+        <h1 id="hero-title">Seu estoque sob <span>todos os olhos</span>, na palma da mão.</h1>
+        <p class="lead">Registre entradas por caixa, controle lotes e validades e dê baixa no que vence primeiro. Tudo pelo celular, sem planilhas e sem contas erradas.</p>
+        <div class="cta">
+          <a href="#contato" class="btn btn-primary">Quero conhecer</a>
+          <a href="#como-funciona" class="btn btn-ghost">Ver como funciona</a>
+        </div>
+        <div class="trust">
+          <div><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Funciona como app</div>
+          <div><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Dados isolados por empresa</div>
+          <div><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Histórico completo</div>
+        </div>
+      </div>
+
+      <div class="phone">
+        <img src="./assets/app-preview.png" width="600" height="1300"
+             alt="Tela do Argos no celular: lista de estoque com produtos, quantidades, validade, entradas e saídas"
+             fetchpriority="high" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <!-- Recursos -->
+  <section id="recursos">
+    <div class="wrap">
+      <div class="s-head">
+        <p class="eyebrow">Recursos</p>
+        <h2>O essencial para não perder produto nem dinheiro.</h2>
+        <p>Pensado para quem recebe mercadoria em caixas e precisa saber exatamente quantas unidades tem, onde estão e quando vencem.</p>
+      </div>
+      <div class="features">
+        <div class="feat">
+          <div class="feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg></div>
+          <h3>Entrada em massa</h3>
+          <p>Informe caixas e o sistema converte em unidades automaticamente. Sem calculadora.</p>
+        </div>
+        <div class="feat">
+          <div class="feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+          <h3>Lotes, validade e alarmes</h3>
+          <p>Cada lote com seu saldo e sua data. Crie alarmes e seja avisado antes que algo vença ou o estoque fique baixo.</p>
+        </div>
+        <div class="feat">
+          <div class="feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M7 12h10M10 18h4"/></svg></div>
+          <h3>Saída inteligente (FEFO)</h3>
+          <p>Sai primeiro o que vence primeiro. Uma baixa pode consumir vários lotes sozinha.</p>
+        </div>
+        <div class="feat">
+          <div class="feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 3l4 4-4 4M21 7H9M7 21l-4-4 4-4M3 17h12"/></svg></div>
+          <h3>Central → Operacional</h3>
+          <p>Transfira do estoque central para o de uso diário em uma única operação.</p>
+        </div>
+        <div class="feat">
+          <div class="feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 2"/><circle cx="12" cy="12" r="9"/></svg></div>
+          <h3>Histórico que não se apaga</h3>
+          <p>Quem fez, o quê, quanto e quando. Correções viram ajustes com motivo, nunca edições.</p>
+        </div>
+        <div class="feat">
+          <div class="feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM20 14v.01M14 20v.01M20 20h-3"/></svg></div>
+          <h3>Busca rápida e QR Code</h3>
+          <p>Encontre pelo nome, pelo código do produto ou lendo o QR Code.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Exemplo -->
+  <section class="pt-0">
+    <div class="wrap">
+      <div class="calc">
+        <div>
+          <p class="eyebrow">Contagem em unidades</p>
+          <h2>Chegou mercadoria? Conte caixas, não unidades.</h2>
+          <p>Cada produto sabe quantas unidades vêm por caixa. Você informa as caixas e o saldo fica sempre certo, em unidades.</p>
+        </div>
+        <div class="eq">
+          <div class="eq-box"><strong>10</strong><span>caixas</span></div>
+          <div class="eq-op">×</div>
+          <div class="eq-box"><strong>12</strong><span>un. por caixa</span></div>
+          <div class="eq-op">=</div>
+          <div class="eq-box res"><strong>120</strong><span>unidades</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Como funciona -->
+  <section id="como-funciona" class="section-alt">
+    <div class="wrap">
+      <div class="s-head">
+        <p class="eyebrow">Como funciona</p>
+        <h2>Do recebimento à baixa, em três passos.</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><h3>Cadastre e dê entrada no Central</h3><p>Cada produto recebe um código (001, 002…) e a quantidade por caixa. Informe caixas, lote e validade, e o estoque central recebe tudo em unidades.</p></div>
+        <div class="step"><h3>Transfira para o uso</h3><p>Leve ao Operacional só o que vai ser usado. Os dois lados ficam registrados.</p></div>
+        <div class="step"><h3>Dê baixa pelo celular</h3><p>A equipe registra a saída e o sistema escolhe o lote que vence primeiro.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Equipe -->
+  <section id="equipe">
+    <div class="wrap">
+      <div class="s-head">
+        <p class="eyebrow">Equipe</p>
+        <h2>Cada pessoa vê o que precisa.</h2>
+        <p>Permissões definidas por papel, verificadas no servidor. Ninguém acessa dados de outra empresa.</p>
+      </div>
+      <div class="roles">
+        <div class="role">
+          <span class="role-tag a">Administrador</span>
+          <h3>Controle total</h3>
+          <ul>
+            <li>Gerencia o estoque Central e o Operacional</li>
+            <li>Cadastra produtos e registra entradas</li>
+            <li>Faz transferências e ajustes</li>
+            <li>Acompanha todo o histórico</li>
+          </ul>
+        </div>
+        <div class="role">
+          <span class="role-tag f">Funcionário</span>
+          <h3>Rápido no dia a dia</h3>
+          <ul>
+            <li>Acessa o estoque Operacional</li>
+            <li>Registra saídas em poucos toques</li>
+            <li>Consulta saldos e validades</li>
+            <li>Cada ação fica registrada com seu papel</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="duvidas" class="pt-0">
+    <div class="wrap">
+      <div class="s-head">
+        <p class="eyebrow">Dúvidas</p>
+        <h2>Perguntas frequentes</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Preciso instalar algum aplicativo?</summary>
+          <p>Não. O Argos abre no navegador do celular e pode ser adicionado à tela inicial, funcionando como um app.</p>
+        </details>
+        <details>
+          <summary>E se alguém registrar uma quantidade errada?</summary>
+          <p>Movimentações não são editadas nem apagadas. A correção é feita com um ajuste (positivo ou negativo) com motivo obrigatório, mantendo o histórico transparente.</p>
+        </details>
+        <details>
+          <summary>O estoque pode ficar negativo?</summary>
+          <p>Não. O sistema bloqueia qualquer saída acima do saldo disponível, mesmo com várias pessoas registrando ao mesmo tempo.</p>
+        </details>
+        <details>
+          <summary>Meus dados ficam separados de outras empresas?</summary>
+          <p>Sim. Cada empresa tem seus dados isolados, e o acesso é verificado diretamente no banco de dados.</p>
+        </details>
+        <details>
+          <summary>O Argos me avisa quando algo precisa de atenção?</summary>
+          <p>Sim. Você cria alarmes, por exemplo para produtos perto do vencimento ou com estoque baixo, e o Argos dispara o aviso quando a condição acontece.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA final -->
+  <section id="contato" class="pt-0">
+    <div class="wrap">
+      <div class="final">
+        <h2>Pronto para organizar seu estoque?</h2>
+        <p>Fale com a gente para começar a usar o Argos na sua empresa.</p>
+        <div class="cta">
+          <a href="mailto:argosapp.info@gmail.com" class="btn btn-primary">Falar com a equipe</a>
+          <a href="https://painel.argosapp.io" class="btn btn-ghost">Já sou cliente</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <a href="/" class="logo logo-sm" aria-label="Argos — início">
+      <img src="./assets/argos_horizontal.png" width="108" height="20" alt="Argos" loading="lazy">
+    </a>
+    <span>© <span id="y"></span> Argos. Todos os direitos reservados.</span>
+  </div>
+</footer>
+
+<script src="./script.js" defer></script>
+</body>
+</html>
