@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Argos — Simple inventory management on your phone</title>
+<meta name="description" content="Argos is an inventory management system for your phone: bulk intake by box, batches and expiry dates, FEFO stock removal, transfers and a complete history.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://www.argosapp.io/en/">
+<link rel="alternate" hreflang="de" href="https://www.argosapp.io/">
+<link rel="alternate" hreflang="pt-BR" href="https://www.argosapp.io/pt-br/">
+<link rel="alternate" hreflang="en" href="https://www.argosapp.io/en/">
+<link rel="alternate" hreflang="x-default" href="https://www.argosapp.io/">
+<link rel="icon" type="image/svg+xml" href="/assets/logo-argos.svg">
+<meta name="theme-color" content="#0073FE">
+
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Argos">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Argos — Simple inventory management on your phone">
+<meta property="og:description" content="Bulk intake by box, batches and expiry dates, FEFO stock removal, transfers and a complete history. All on your phone.">
+<meta property="og:url" content="https://www.argosapp.io/en/">
+<meta property="og:image" content="https://www.argosapp.io/assets/argos_horizontal.png">
+<meta property="og:image:alt" content="Argos — inventory management on your phone">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Argos — Simple inventory management on your phone">
+<meta name="twitter:description" content="Bulk intake by box, batches and expiry dates, FEFO stock removal, transfers and a complete history. All on your phone.">
+<meta name="twitter:image" content="https://www.argosapp.io/assets/argos_horizontal.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css?v=5">
+<link rel="preload" as="image" type="image/webp" href="/assets/app-preview-en.webp">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.argosapp.io/#organization",
+      "name": "Argos",
+      "url": "https://www.argosapp.io/",
+      "logo": "https://www.argosapp.io/assets/argos_horizontal.png",
+      "email": "argosapp.info@gmail.com"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.argosapp.io/en/#website",
+      "url": "https://www.argosapp.io/en/",
+      "name": "Argos",
+      "publisher": { "@id": "https://www.argosapp.io/#organization" },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Argos",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": "Inventory management for your phone: bulk intake by box, batches and expiry dates, FEFO stock removal, transfers and a complete history.",
+      "url": "https://painel.argosapp.io",
+      "image": "https://www.argosapp.io/assets/app-preview-en.webp",
+      "publisher": { "@id": "https://www.argosapp.io/#organization" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Do I need to install an app?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Argos opens in your phone’s browser and can be added to the home screen, where it works like an app." } },
+        { "@type": "Question", "name": "What if someone records the wrong quantity?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Movements cannot be edited or deleted. Corrections use a positive or negative adjustment with a required reason, keeping the history transparent." } },
+        { "@type": "Question", "name": "Can stock go negative?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. The system blocks removals above the available balance, even when several people record movements at once." } },
+        { "@type": "Question", "name": "Is my data separated from other companies?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Each company’s data is isolated, and access is checked directly in the database." } },
+        { "@type": "Question", "name": "Will Argos alert me when something needs attention?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. You can set alerts for products nearing expiry or running low, and Argos notifies you when the condition occurs." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="/en/" class="logo" aria-label="Argos — home">
+      <img src="/assets/argos_horizontal.png" width="141" height="26" alt="Argos">
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#recursos">Features</a>
+      <a href="#como-funciona">How it works</a>
+      <a href="#equipe">Team</a>
+      <a href="#duvidas">Questions</a>
+    </nav>
+    <div class="nav-actions">
+      <nav class="language-switcher" aria-label="Choose language">
+        <a href="/" lang="de" hreflang="de" data-language="de">DE</a>
+        <a href="/pt-br/" lang="pt-BR" hreflang="pt-BR" data-language="pt-BR">PT</a>
+        <a href="/en/" lang="en" hreflang="en" data-language="en" aria-current="page">EN</a>
+      </nav>
+      <a href="https://painel.argosapp.io" class="btn btn-primary">Sign in</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="tag">Inventory management for your phone</span>
+        <h1 id="hero-title">Your inventory <span>always in sight</span>, right in your hand.</h1>
+        <p class="lead">Record incoming boxes, track batches and expiry dates, and use what expires first. All on your phone, without spreadsheets or calculation errors.</p>
+        <div class="cta">
+          <a href="#contato" class="btn btn-primary">Discover Argos</a>
+          <a href="#como-funciona" class="btn btn-ghost">See how it works</a>
+        </div>
+        <div class="trust">
+          <div><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Works like an app</div>
+          <div><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Data separated by company</div>
+          <div><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Complete history</div>
+        </div>
+      </div>
+
+      <div class="phone">
+        <img src="/assets/app-preview-en.webp" width="1086" height="1086"
+             alt="Two iPhones showing the Argos inventory screen and open navigation menu in English"
+             fetchpriority="high" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="recursos">
+    <div class="wrap">
+      <div class="s-head">
+        <p class="eyebrow">Features</p>
+        <h2>Everything you need to avoid losing products or money.</h2>
+        <p>Built for teams that receive goods by the box and need to know exactly how many units they have, where they are and when they expire.</p>
+      </div>
+      <div class="features">
+        <div class="feat">
+          <div class="feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg></div>
+          <h3>Bulk intake</h3>
+          <p>Enter the number of boxes and the system converts them to units automatically. No calculator needed.</p>
+        </div>
+        <div class="feat">
+          <div class="feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+          <h3>Batches, expiry dates and alerts</h3>
+          <p>Each batch has its own balance and expiry date. Set alerts for products nearing expiry or running low.</p>
+        </div>
+        <div class="feat">
+          <div class="feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M7 12h10M10 18h4"/></svg></div>
+          <h3>Smart stock removal (FEFO)</h3>
+          <p>What expires first goes out first. A single removal can draw from multiple batches.</p>
+        </div>
+        <div class="feat">
+          <div class="feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 3l4 4-4 4M21 7H9M7 21l-4-4 4-4M3 17h12"/></svg></div>
+          <h3>Central → Operational</h3>
+          <p>Move stock from central storage to daily use in a single step.</p>
+        </div>
+        <div class="feat">
+          <div class="feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 2"/><circle cx="12" cy="12" r="9"/></svg></div>
+          <h3>A history that stays</h3>
+          <p>See who did what, how much and when. Corrections are recorded as adjustments with a reason, never as edits.</p>
+        </div>
+        <div class="feat">
+          <div class="feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM20 14v.01M14 20v.01M20 20h-3"/></svg></div>
+          <h3>Quick search and QR codes</h3>
+          <p>Find products by name, product code or QR code.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Exemplo -->
+  <section class="pt-0">
+    <div class="wrap">
+      <div class="calc">
+        <div>
+          <p class="eyebrow">Counting in units</p>
+          <h2>Goods arrived? Count boxes, not units.</h2>
+          <p>Each product stores its units per box. Enter the boxes and the balance stays accurate in units.</p>
+        </div>
+        <div class="eq">
+          <div class="eq-box"><strong>10</strong><span>boxes</span></div>
+          <div class="eq-op">×</div>
+          <div class="eq-box"><strong>12</strong><span>units per box</span></div>
+          <div class="eq-op">=</div>
+          <div class="eq-box res"><strong>120</strong><span>units</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="como-funciona" class="section-alt">
+    <div class="wrap">
+      <div class="s-head">
+        <p class="eyebrow">How it works</p>
+        <h2>From delivery to stock removal in three steps.</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><h3>Register and receive in Central</h3><p>Each product gets a code (001, 002…) and a quantity per box. Enter boxes, batch and expiry date; Central records everything in units.</p></div>
+        <div class="step"><h3>Transfer for daily use</h3><p>Move only what is needed to Operational. Both sides are recorded.</p></div>
+        <div class="step"><h3>Remove stock on your phone</h3><p>Your team records the removal and the system chooses the batch that expires first.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section id="equipe">
+    <div class="wrap">
+      <div class="s-head">
+        <p class="eyebrow">Team</p>
+        <h2>Everyone sees what they need.</h2>
+        <p>Role-based permissions are checked on the server. No one can access another company’s data.</p>
+      </div>
+      <div class="roles">
+        <div class="role">
+          <span class="role-tag a">Administrator</span>
+          <h3>Full control</h3>
+          <ul>
+            <li>Manages Central and Operational stock</li>
+            <li>Adds products and records incoming stock</li>
+            <li>Makes transfers and adjustments</li>
+            <li>Reviews the complete history</li>
+          </ul>
+        </div>
+        <div class="role">
+          <span class="role-tag f">Employee</span>
+          <h3>Fast in everyday work</h3>
+          <ul>
+            <li>Accesses Operational stock</li>
+            <li>Records removals in a few taps</li>
+            <li>Checks balances and expiry dates</li>
+            <li>Every action is recorded with the user’s role</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="duvidas" class="pt-0">
+    <div class="wrap">
+      <div class="s-head">
+        <p class="eyebrow">Questions</p>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Do I need to install an app?</summary>
+          <p>No. Argos opens in your phone’s browser and can be added to the home screen, where it works like an app.</p>
+        </details>
+        <details>
+          <summary>What if someone records the wrong quantity?</summary>
+          <p>Movements cannot be edited or deleted. Corrections use a positive or negative adjustment with a required reason, keeping the history transparent.</p>
+        </details>
+        <details>
+          <summary>Can stock go negative?</summary>
+          <p>No. The system blocks removals above the available balance, even when several people record movements at once.</p>
+        </details>
+        <details>
+          <summary>Is my data separated from other companies?</summary>
+          <p>Yes. Each company’s data is isolated, and access is checked directly in the database.</p>
+        </details>
+        <details>
+          <summary>Will Argos alert me when something needs attention?</summary>
+          <p>Yes. You can set alerts for products nearing expiry or running low, and Argos notifies you when the condition occurs.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA final -->
+  <section id="contato" class="pt-0">
+    <div class="wrap">
+      <div class="final">
+        <h2>Ready to organize your inventory?</h2>
+        <p>Get in touch to start using Argos at your company.</p>
+        <div class="cta">
+          <a href="mailto:argosapp.info@gmail.com" class="btn btn-primary">Contact the team</a>
+          <a href="https://painel.argosapp.io" class="btn btn-ghost">I’m already a customer</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <a href="/en/" class="logo logo-sm" aria-label="Argos — home">
+      <img src="/assets/argos_horizontal.png" width="108" height="20" alt="Argos" loading="lazy">
+    </a>
+    <span>© <span id="y"></span> Argos. All rights reserved.</span>
+  </div>
+</footer>
+
+<script src="/script.js" defer></script>
+</body>
+</html>
