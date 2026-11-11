@@ -93,7 +93,6 @@ h2{font-size:clamp(1.7rem,3.5vw,2.4rem);line-height:1.15;letter-spacing:-.03em;f
 .role li::before{content:"✓";color:var(--brand);font-weight:700}
 
 /* FAQ */
-.faq{max-width:760px}
 details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 22px;margin-bottom:10px}
 summary{font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px}
 summary::-webkit-details-marker{display:none}
