@@ -10,3 +10,5 @@ document.querySelectorAll(".language-switcher [data-language]").forEach((link) =
     }
   });
 });
+
+if (window.lucide) window.lucide.createIcons();
