@@ -30,7 +30,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css?v=5">
+<link rel="stylesheet" href="/styles.css?v=6">
 <link rel="preload" as="image" type="image/webp" href="/assets/app-preview-pt.webp">
 
 <script type="application/ld+json">
@@ -93,6 +93,7 @@
       <a href="#recursos">Recursos</a>
       <a href="#como-funciona">Como funciona</a>
       <a href="#equipe">Equipe</a>
+      <a href="#planos">Planos</a>
       <a href="#duvidas">Dúvidas</a>
     </nav>
     <div class="nav-actions">
@@ -244,6 +245,69 @@
     </div>
   </section>
 
+  <!-- Planos -->
+  <section id="planos" class="pt-0">
+    <div class="wrap">
+      <div class="s-head">
+        <p class="eyebrow">Planos</p>
+        <h2>Um plano para cada tamanho de operação.</h2>
+        <p>Todos os planos incluem cadastro de produtos, movimentações e relatório em PDF. Mude de plano quando sua equipe crescer.</p>
+      </div>
+      <div class="plans">
+        <article class="plan" aria-labelledby="plan-slim">
+          <h3 id="plan-slim">Slim</h3>
+          <p class="plan-desc">Para quem está começando a organizar o estoque.</p>
+          <ul class="plan-list">
+            <li><i data-lucide="warehouse" class="plan-ico" aria-hidden="true"></i><span>Número de estoques</span><strong>1</strong></li>
+            <li><i data-lucide="users" class="plan-ico" aria-hidden="true"></i><span>Acesso de funcionários</span><strong>2</strong></li>
+            <li><i data-lucide="bell" class="plan-ico" aria-hidden="true"></i><span>Alertas</span><strong>Até 3</strong></li>
+            <li><i data-lucide="history" class="plan-ico" aria-hidden="true"></i><span>Histórico</span><strong>Últimos 30 dias</strong></li>
+            <li><i data-lucide="tag" class="plan-ico" aria-hidden="true"></i><span>Etiquetas</span><strong>Nome - SKU</strong></li>
+            <li><i data-lucide="package" class="plan-ico" aria-hidden="true"></i><span>Produtos e movimentações</span><strong><i data-lucide="check" class="plan-yes" aria-hidden="true"></i><span class="sr-only">Incluído</span></strong></li>
+            <li><i data-lucide="file-text" class="plan-ico" aria-hidden="true"></i><span>Relatório em PDF</span><strong><i data-lucide="check" class="plan-yes" aria-hidden="true"></i><span class="sr-only">Incluído</span></strong></li>
+            <li class="off"><i data-lucide="qr-code" class="plan-ico" aria-hidden="true"></i><span>Retirada por QR Code</span><strong><i data-lucide="x" class="plan-no" aria-hidden="true"></i><span class="sr-only">Não incluído</span></strong></li>
+            <li class="off"><i data-lucide="clock" class="plan-ico" aria-hidden="true"></i><span>Controle de ponto</span><strong><i data-lucide="x" class="plan-no" aria-hidden="true"></i><span class="sr-only">Não incluído</span></strong></li>
+          </ul>
+          <a href="mailto:argosapp.info@gmail.com?subject=Argos%20Slim" class="btn btn-ghost">Falar com a equipe</a>
+        </article>
+        <article class="plan featured" aria-labelledby="plan-plus">
+          <span class="plan-badge"><i data-lucide="star" aria-hidden="true"></i>Recomendado</span>
+          <h3 id="plan-plus">Plus</h3>
+          <p class="plan-desc">Para equipes em crescimento, com etiquetas QR e histórico completo.</p>
+          <ul class="plan-list">
+            <li><i data-lucide="warehouse" class="plan-ico" aria-hidden="true"></i><span>Número de estoques</span><strong>8</strong></li>
+            <li><i data-lucide="users" class="plan-ico" aria-hidden="true"></i><span>Acesso de funcionários</span><strong>8</strong></li>
+            <li><i data-lucide="bell" class="plan-ico" aria-hidden="true"></i><span>Alertas</span><strong>Até 8</strong></li>
+            <li><i data-lucide="history" class="plan-ico" aria-hidden="true"></i><span>Histórico</span><strong>Completo</strong></li>
+            <li><i data-lucide="tag" class="plan-ico" aria-hidden="true"></i><span>Etiquetas</span><strong>Nome - SKU - QR</strong></li>
+            <li><i data-lucide="package" class="plan-ico" aria-hidden="true"></i><span>Produtos e movimentações</span><strong><i data-lucide="check" class="plan-yes" aria-hidden="true"></i><span class="sr-only">Incluído</span></strong></li>
+            <li><i data-lucide="file-text" class="plan-ico" aria-hidden="true"></i><span>Relatório em PDF</span><strong><i data-lucide="check" class="plan-yes" aria-hidden="true"></i><span class="sr-only">Incluído</span></strong></li>
+            <li><i data-lucide="qr-code" class="plan-ico" aria-hidden="true"></i><span>Retirada por QR Code</span><strong><i data-lucide="check" class="plan-yes" aria-hidden="true"></i><span class="sr-only">Incluído</span></strong></li>
+            <li class="off"><i data-lucide="clock" class="plan-ico" aria-hidden="true"></i><span>Controle de ponto</span><strong><i data-lucide="x" class="plan-no" aria-hidden="true"></i><span class="sr-only">Não incluído</span></strong></li>
+          </ul>
+          <a href="mailto:argosapp.info@gmail.com?subject=Argos%20Plus" class="btn btn-primary">Falar com a equipe</a>
+        </article>
+        <article class="plan" aria-labelledby="plan-premium">
+          <h3 id="plan-premium">Premium</h3>
+          <p class="plan-desc">Para operações com vários estoques e equipes grandes.</p>
+          <ul class="plan-list">
+            <li><i data-lucide="warehouse" class="plan-ico" aria-hidden="true"></i><span>Número de estoques</span><strong>Ilimitado</strong></li>
+            <li><i data-lucide="users" class="plan-ico" aria-hidden="true"></i><span>Acesso de funcionários</span><strong>Ilimitado</strong></li>
+            <li><i data-lucide="bell" class="plan-ico" aria-hidden="true"></i><span>Alertas</span><strong>Até 30</strong></li>
+            <li><i data-lucide="history" class="plan-ico" aria-hidden="true"></i><span>Histórico</span><strong>Completo</strong></li>
+            <li><i data-lucide="tag" class="plan-ico" aria-hidden="true"></i><span>Etiquetas</span><strong>Nome - SKU - QR</strong></li>
+            <li><i data-lucide="package" class="plan-ico" aria-hidden="true"></i><span>Produtos e movimentações</span><strong><i data-lucide="check" class="plan-yes" aria-hidden="true"></i><span class="sr-only">Incluído</span></strong></li>
+            <li><i data-lucide="file-text" class="plan-ico" aria-hidden="true"></i><span>Relatório em PDF</span><strong><i data-lucide="check" class="plan-yes" aria-hidden="true"></i><span class="sr-only">Incluído</span></strong></li>
+            <li><i data-lucide="qr-code" class="plan-ico" aria-hidden="true"></i><span>Retirada por QR Code</span><strong><i data-lucide="check" class="plan-yes" aria-hidden="true"></i><span class="sr-only">Incluído</span></strong></li>
+            <li><i data-lucide="clock" class="plan-ico" aria-hidden="true"></i><span>Controle de ponto</span><strong><i data-lucide="check" class="plan-yes" aria-hidden="true"></i><span class="sr-only">Incluído</span></strong></li>
+          </ul>
+          <a href="mailto:argosapp.info@gmail.com?subject=Argos%20Premium" class="btn btn-ghost">Falar com a equipe</a>
+        </article>
+      </div>
+      <p class="plans-note">Fale com a gente para saber valores e condições.</p>
+    </div>
+  </section>
+
   <!-- FAQ -->
   <section id="duvidas" class="pt-0">
     <div class="wrap">
@@ -300,6 +364,7 @@
   </div>
 </footer>
 
-<script src="/script.js" defer></script>
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
+<script src="/script.js?v=2" defer></script>
 </body>
 </html>
